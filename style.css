@@ -1,0 +1,187 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f3f5fb;
+  color: #202b43;
+}
+
+.container {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 34px;
+}
+
+header h1 span {
+  color: #4779f5;
+}
+
+header p {
+  color: #8992a4;
+  margin-top: 8px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #00000008;
+}
+
+.stat h2 {
+  color: #4779f5;
+  font-size: 28px;
+}
+
+.stat p {
+  color: #8992a4;
+  margin-top: 7px;
+}
+
+.task-box {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px #00000008;
+}
+
+.task-box h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #dce1ec;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4779f5;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 12px 17px;
+  background: #4779f5;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.filters button {
+  background: #edf1fa;
+  color: #68748a;
+}
+
+.filters button.active {
+  background: #4779f5;
+  color: white;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.task p {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.task.done p {
+  text-decoration: line-through;
+  color: #9ba4b3;
+}
+
+.task input {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  accent-color: #4779f5;
+}
+
+.delete {
+  background: #fff0f0;
+  color: #df5555;
+  padding: 8px 12px;
+}
+
+.empty {
+  text-align: center;
+  padding: 25px;
+  color: #929bac;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #9ba4b3;
+  font-size: 13px;
+}
+
+@media(max-width: 550px) {
+  .container {
+    margin: 20px auto;
+  }
+
+  .stats {
+    gap: 8px;
+  }
+
+  .stat {
+    padding: 13px;
+  }
+
+  .stat h2 {
+    font-size: 22px;
+  }
+
+  .stat p {
+    font-size: 12px;
+  }
+
+  .task-box {
+    padding: 17px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+}
